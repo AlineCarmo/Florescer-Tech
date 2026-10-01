@@ -7,22 +7,25 @@ const menu = document.querySelector('.menu');
 
 if (menuToggle && menu) {
 
+    menuToggle.setAttribute('aria-expanded', 'false');
+
     menuToggle.addEventListener('click', function () {
 
         if (menu.style.display === 'flex') {
 
             menu.style.display = 'none';
+            menuToggle.setAttribute('aria-expanded', 'false');
 
         } else {
 
             menu.style.display = 'flex';
+            menuToggle.setAttribute('aria-expanded', 'true');
 
         }
 
     });
 
 }
-
 
 /* =====================================================
    ÁREA PRINCIPAL DA SPA
