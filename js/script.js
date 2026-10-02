@@ -4,6 +4,7 @@
 
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
+const primeiroLink = menu?.querySelector('a');
 
 if (menuToggle && menu) {
 
@@ -15,6 +16,7 @@ if (menuToggle && menu) {
 
             menu.style.display = 'none';
             menuToggle.setAttribute('aria-expanded', 'false');
+            primeiroLink?.focus();
 
         } else {
 

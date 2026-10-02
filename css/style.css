@@ -6,9 +6,9 @@ css
     --cor-destaque: #5b2a86;
     --cor-texto: #000000;
     --cor-fundo: #dac9df;
-    --cor-neutra-clara: #ffffff;
+    --cor-neutra-clara: #dac9df;
     --cor-neutra-media: #e8ddeb;
-    --cor-neutra-escura: #503459;
+    --cor-neutra-escura: #3f2945;
 
     /* Cores de estado */
 
@@ -105,6 +105,8 @@ nav a:hover,
 nav a:focus {
     color: #5b2a86;
     text-decoration: underline;
+    outline: 2px solid #5b2a86;
+    outline-offset: 3px;
 }
 
 h1 {
